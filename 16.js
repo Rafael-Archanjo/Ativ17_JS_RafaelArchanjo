@@ -1,8 +1,8 @@
 var a, b, c, maior, menor, medio;
 
 a = 5
-b = 10
-c = 13
+b = 3
+c = 4
 
 if (a > b && b > c) {
     maior = a
@@ -20,10 +20,14 @@ if (a > b && b > c) {
     maior = c
     medio = a
     menor = b
-} else {
+} else if (b > a && a >c) {
     maior = b
     medio = a
     menor = c
+} else {
+    maior = a
+    medio = c
+    menor = b
 }
 
 console.log(menor, medio, maior)
